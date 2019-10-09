@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    
+
+    
+</head>
+    
+<body onload="mes_exos()">
+    <a href="" id="welcome" >ouverture</a>
+    <img src="Les-plus-belles-plages-de-France.jpg" 
+         onMouseOver="this.src = 'nuit.jpg' " onMouseOut="this.src = 'Les-plus-belles-plages-de-France.jpg' " />
+    <div id="infos_navigateur" >
+    </div>
+    
+    <div id="affiche_heure"></div>
+    <script>
+    mes_exos = function () {
+        
+        /****** EXO 1 ******/
+        let link_welcome = document.getElementById('welcome');
+
+        link_welcome.addEventListener('click', function(e){
+            e.preventDefault();
+            alert("Bienvenue sur mon site");
+        })
+
+        /****** EXO 2 ******/
+    
+/*
+        alert("Bonjour");
+*/
+        
+        /****** EXO 3 ******/
+        
+/*
+        res = confirm("Voulez vous continuer");
+        
+        if (res) alert("ok");
+        else alert ("annuler")
+*/
+
+        /****** EXO 4 ******/
+/*
+        let date = document.lastModified;
+        let dates = [];
+        dates = date.split('/');
+        let separ = [];
+        separ = dates[2].split(' ');
+        let new_date = dates[1] +'/'+ dates[0] +'/'+ separ[0];
+        
+        alert(new_date);
+        */
+        /****** EXO 5 ******/
+/*       
+        let name_and_last = prompt("Entrez votres NOM puis votre PRENOM séparé par un espace","amghar axel");
+        let name_and_last_s = [];
+        name_and_last_s = name_and_last.split(' ');
+        let last_name = name_and_last_s[0];
+        let name = name_and_last_s[1];
+        name = name.substr(0,1).toUpperCase() + name.substr(1).toLowerCase();
+        
+        alert("Bonjour " + last_name.toUpperCase() + " " + name);
+        */
+        
+        /****** EXO 6 ******/
+        
+        /* Images */
+        
+        /****** EXO 7 ******/
+/*        
+        let div_navigateur = document.getElementById('infos_navigateur');
+        let content = "Navigateur " + navigator.appCodeName +  "\nVersion " +navigator.appVersion + "\nLangage " + navigator.browserLanguage + "\nSystème " + navigator.platform ;
+        console.log(content);
+        div_navigateur.textContent = content;
+        */
+         /****** EXO 8 ******/
+        
+/*        let nom = prompt("Entrer votre nom","AMGHAR");
+        let prenom = prompt("Entrer votre prénom","Axel");
+        
+        alert("Nombre de caratères dans le nom " + nom.length +
+              "\nNombre de caratères dans le prénom " + prenom.length +
+              "\n3premiers caractères du nom " + nom.substr(0,3) +
+              "\n3premiers caractères du prenom " + prenom.substr(0,3) 
+             );*/
+        
+        /****** EXO 9 ******/
+/*
+        
+        let n1 = prompt("Entrer un nombre reel", 4.3345);
+        let n2 = prompt("Entrer un autre nombre reel", 12.2434);
+        n1 = parseFloat(n1,10);
+        n2 = parseFloat(n2,10);
+        let somme_arrondie = (n1+n2);
+        somme_arrondie = somme_arrondie.toFixed(2);
+        
+        let valeur_max = 0;
+        if (n1 > n2) valeur_max = n1;
+        else valeur_max = n2;
+        
+        let entier = 5;
+        
+        alert("Somme arrondie : " + somme_arrondie +
+              "\nValeur maximale : " + valeur_max +
+              "\n"+ entier + " >= " + n1 + " : " + (entier >= n1 ? true:false) +
+              "\n"+ entier + " <= " + n2 +" : " + (entier <= n2 ? true:false) 
+              );
+*/
+
+         /****** EXO 10 : Affiche heure en temps reel******/
+        
+/*        let div_horaire = document.getElementById("affiche_heure");
+        
+        let date_actuelle = new Date();
+        
+        setInterval(function() {
+            date_actuelle = new Date();
+            div_horaire.textContent  = date_actuelle.getHours() + "." + date_actuelle.getMinutes() + "." + date_actuelle.getSeconds();
+        }, 1000);
+        
+    */
+        /**** Exo 11 : ******/
+/*        
+        let string_mots = prompt("Entrer des mots en les séparants par _", "avion_bouteille_montre_verre");
+        alert(string_mots.replace(/_/g,'/'));
+        */
+        
+         /**** Exo 12: Afficher bonjour + nom dans une nouvelle fenetre ******/
+        
+        let nom = prompt("Saisir un nom","Axel");
+        
+        let new_window = window.open();
+        new_window.alert("Bonjour "+ nom);
+    }
+</script>
+</body>
+    
